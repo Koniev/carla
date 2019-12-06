@@ -35,23 +35,23 @@ if (WIN32)
 endif (WIN32)
 
 # Add sources.
-file(GLOB libcarla_carla_sources
-    "${libcarla_source_path}/carla/*.cpp"
-    "${libcarla_source_path}/carla/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_sources}")
-install(FILES ${libcarla_carla_sources} DESTINATION include/carla)
+# file(GLOB libcarla_carla_sources
+    # "${libcarla_source_path}/carla/*.cpp"
+    # "${libcarla_source_path}/carla/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_sources}")
+# install(FILES ${libcarla_carla_sources} DESTINATION include/carla)
 
-file(GLOB libcarla_carla_client_sources
-    "${libcarla_source_path}/carla/client/*.cpp"
-    "${libcarla_source_path}/carla/client/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_client_sources}")
-install(FILES ${libcarla_carla_client_sources} DESTINATION include/carla/client)
+# file(GLOB libcarla_carla_client_sources
+    # "${libcarla_source_path}/carla/client/*.cpp"
+    # "${libcarla_source_path}/carla/client/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_client_sources}")
+# install(FILES ${libcarla_carla_client_sources} DESTINATION include/carla/client)
 
-file(GLOB libcarla_carla_client_detail_sources
-    "${libcarla_source_path}/carla/client/detail/*.cpp"
-    "${libcarla_source_path}/carla/client/detail/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_client_detail_sources}")
-install(FILES ${libcarla_carla_client_detail_sources} DESTINATION include/carla/client/detail)
+# file(GLOB libcarla_carla_client_detail_sources
+    # "${libcarla_source_path}/carla/client/detail/*.cpp"
+    # "${libcarla_source_path}/carla/client/detail/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_client_detail_sources}")
+# install(FILES ${libcarla_carla_client_detail_sources} DESTINATION include/carla/client/detail)
 
 file(GLOB libcarla_carla_geom_sources
     "${libcarla_source_path}/carla/geom/*.cpp"
@@ -65,11 +65,11 @@ file(GLOB libcarla_carla_image_sources
 set(libcarla_sources "${libcarla_sources};${libcarla_carla_image_sources}")
 install(FILES ${libcarla_carla_image_sources} DESTINATION include/carla/image)
 
-file(GLOB libcarla_carla_nav_sources
-    "${libcarla_source_path}/carla/nav/*.cpp"
-    "${libcarla_source_path}/carla/nav/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_nav_sources}")
-install(FILES ${libcarla_carla_nav_sources} DESTINATION include/carla/nav)
+# file(GLOB libcarla_carla_nav_sources
+    # "${libcarla_source_path}/carla/nav/*.cpp"
+    # "${libcarla_source_path}/carla/nav/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_nav_sources}")
+# install(FILES ${libcarla_carla_nav_sources} DESTINATION include/carla/nav)
 
 file(GLOB libcarla_carla_opendrive_sources
     "${libcarla_source_path}/carla/opendrive/*.cpp"
@@ -83,15 +83,15 @@ file(GLOB libcarla_carla_opendrive_parser_sources
 set(libcarla_sources "${libcarla_sources};${libcarla_carla_opendrive_parser_sources}")
 install(FILES ${libcarla_carla_opendrive_parser_sources} DESTINATION include/carla/opendrive/parser)
 
-file(GLOB libcarla_carla_pointcloud_sources
-    "${libcarla_source_path}/carla/pointcloud/*.cpp"
-    "${libcarla_source_path}/carla/pointcloud/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_pointcloud_sources}")
-install(FILES ${libcarla_carla_pointcloud_sources} DESTINATION include/carla/pointcloud)
+# file(GLOB libcarla_carla_pointcloud_sources
+    # "${libcarla_source_path}/carla/pointcloud/*.cpp"
+    # "${libcarla_source_path}/carla/pointcloud/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_pointcloud_sources}")
+# install(FILES ${libcarla_carla_pointcloud_sources} DESTINATION include/carla/pointcloud)
 
-file(GLOB libcarla_carla_profiler_headers
-    "${libcarla_source_path}/carla/profiler/*.h")
-install(FILES ${libcarla_carla_profiler_headers} DESTINATION include/carla/profiler)
+# file(GLOB libcarla_carla_profiler_headers
+    # "${libcarla_source_path}/carla/profiler/*.h")
+# install(FILES ${libcarla_carla_profiler_headers} DESTINATION include/carla/profiler)
 
 file(GLOB libcarla_carla_road_sources
     "${libcarla_source_path}/carla/road/*.cpp"
@@ -123,71 +123,71 @@ file(GLOB libcarla_carla_road_signal_sources
 set(libcarla_sources "${libcarla_sources};${libcarla_carla_road_signal_sources}")
 install(FILES ${libcarla_carla_road_signal_sources} DESTINATION include/carla/road/signal)
 
-file(GLOB libcarla_carla_rpc_sources
-    "${libcarla_source_path}/carla/rpc/*.cpp"
-    "${libcarla_source_path}/carla/rpc/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_rpc_sources}")
-install(FILES ${libcarla_carla_rpc_sources} DESTINATION include/carla/rpc)
+# file(GLOB libcarla_carla_rpc_sources
+    # "${libcarla_source_path}/carla/rpc/*.cpp"
+    # "${libcarla_source_path}/carla/rpc/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_rpc_sources}")
+# install(FILES ${libcarla_carla_rpc_sources} DESTINATION include/carla/rpc)
 
-file(GLOB libcarla_carla_sensor_sources
-    "${libcarla_source_path}/carla/sensor/*.cpp"
-    "${libcarla_source_path}/carla/sensor/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_sensor_sources}")
-install(FILES ${libcarla_carla_sensor_sources} DESTINATION include/carla/sensor)
+# file(GLOB libcarla_carla_sensor_sources
+    # "${libcarla_source_path}/carla/sensor/*.cpp"
+    # "${libcarla_source_path}/carla/sensor/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_sensor_sources}")
+# install(FILES ${libcarla_carla_sensor_sources} DESTINATION include/carla/sensor)
 
-file(GLOB libcarla_carla_sensor_data_sources
-    "${libcarla_source_path}/carla/sensor/data/*.cpp"
-    "${libcarla_source_path}/carla/sensor/data/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_sensor_data_sources}")
-install(FILES ${libcarla_carla_sensor_data_sources} DESTINATION include/carla/sensor/data)
+# file(GLOB libcarla_carla_sensor_data_sources
+    # "${libcarla_source_path}/carla/sensor/data/*.cpp"
+    # "${libcarla_source_path}/carla/sensor/data/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_sensor_data_sources}")
+# install(FILES ${libcarla_carla_sensor_data_sources} DESTINATION include/carla/sensor/data)
 
-file(GLOB libcarla_carla_sensor_s11n_sources
-    "${libcarla_source_path}/carla/sensor/s11n/*.cpp"
-    "${libcarla_source_path}/carla/sensor/s11n/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_sensor_s11n_sources}")
-install(FILES ${libcarla_carla_sensor_s11n_sources} DESTINATION include/carla/sensor/s11n)
+# file(GLOB libcarla_carla_sensor_s11n_sources
+    # "${libcarla_source_path}/carla/sensor/s11n/*.cpp"
+    # "${libcarla_source_path}/carla/sensor/s11n/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_sensor_s11n_sources}")
+# install(FILES ${libcarla_carla_sensor_s11n_sources} DESTINATION include/carla/sensor/s11n)
 
-file(GLOB libcarla_carla_streaming_sources
-    "${libcarla_source_path}/carla/streaming/*.cpp"
-    "${libcarla_source_path}/carla/streaming/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_streaming_sources}")
-install(FILES ${libcarla_carla_streaming_sources} DESTINATION include/carla/streaming)
+# file(GLOB libcarla_carla_streaming_sources
+    # "${libcarla_source_path}/carla/streaming/*.cpp"
+    # "${libcarla_source_path}/carla/streaming/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_streaming_sources}")
+# install(FILES ${libcarla_carla_streaming_sources} DESTINATION include/carla/streaming)
 
-file(GLOB libcarla_carla_streaming_detail_sources
-    "${libcarla_source_path}/carla/streaming/detail/*.cpp"
-    "${libcarla_source_path}/carla/streaming/detail/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_streaming_detail_sources}")
-install(FILES ${libcarla_carla_streaming_detail_sources} DESTINATION include/carla/streaming/detail)
+# file(GLOB libcarla_carla_streaming_detail_sources
+    # "${libcarla_source_path}/carla/streaming/detail/*.cpp"
+    # "${libcarla_source_path}/carla/streaming/detail/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_streaming_detail_sources}")
+# install(FILES ${libcarla_carla_streaming_detail_sources} DESTINATION include/carla/streaming/detail)
 
-file(GLOB libcarla_carla_streaming_detail_tcp_sources
-    "${libcarla_source_path}/carla/streaming/detail/tcp/*.cpp"
-    "${libcarla_source_path}/carla/streaming/detail/tcp/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_streaming_detail_tcp_sources}")
-install(FILES ${libcarla_carla_streaming_detail_tcp_sources} DESTINATION include/carla/streaming/detail/tcp)
+# file(GLOB libcarla_carla_streaming_detail_tcp_sources
+    # "${libcarla_source_path}/carla/streaming/detail/tcp/*.cpp"
+    # "${libcarla_source_path}/carla/streaming/detail/tcp/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_streaming_detail_tcp_sources}")
+# install(FILES ${libcarla_carla_streaming_detail_tcp_sources} DESTINATION include/carla/streaming/detail/tcp)
 
-file(GLOB libcarla_carla_streaming_low_level_sources
-    "${libcarla_source_path}/carla/streaming/low_level/*.cpp"
-    "${libcarla_source_path}/carla/streaming/low_level/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_carla_streaming_low_level_sources}")
-install(FILES ${libcarla_carla_streaming_low_level_sources} DESTINATION include/carla/streaming/low_level)
+# file(GLOB libcarla_carla_streaming_low_level_sources
+    # "${libcarla_source_path}/carla/streaming/low_level/*.cpp"
+    # "${libcarla_source_path}/carla/streaming/low_level/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_carla_streaming_low_level_sources}")
+# install(FILES ${libcarla_carla_streaming_low_level_sources} DESTINATION include/carla/streaming/low_level)
 
-file(GLOB libcarla_cephes_sources
-    "${libcarla_source_thirdparty_path}/cephes/*.cpp"
-    "${libcarla_source_thirdparty_path}/cephes/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_cephes_sources}")
-install(FILES ${libcarla_cephes_sources} DESTINATION include/cephes)
+# file(GLOB libcarla_cephes_sources
+    # "${libcarla_source_thirdparty_path}/cephes/*.cpp"
+    # "${libcarla_source_thirdparty_path}/cephes/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_cephes_sources}")
+# install(FILES ${libcarla_cephes_sources} DESTINATION include/cephes)
 
-file(GLOB libcarla_moodycamel_sources
-    "${libcarla_source_thirdparty_path}/moodycamel/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_moodycamel_sources}")
-install(FILES ${libcarla_moodycamel_sources} DESTINATION include/moodycamel)
+# file(GLOB libcarla_moodycamel_sources
+    # "${libcarla_source_thirdparty_path}/moodycamel/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_moodycamel_sources}")
+# install(FILES ${libcarla_moodycamel_sources} DESTINATION include/moodycamel)
 
-file(GLOB libcarla_pugixml_sources
-    "${libcarla_source_thirdparty_path}/pugixml/*.cpp"
-    "${libcarla_source_thirdparty_path}/pugixml/*.hpp"
-    "${libcarla_source_thirdparty_path}/pugixml/*.h")
-set(libcarla_sources "${libcarla_sources};${libcarla_pugixml_sources}")
-install(FILES ${libcarla_pugixml_sources} DESTINATION include/pugixml)
+# file(GLOB libcarla_pugixml_sources
+    # "${libcarla_source_thirdparty_path}/pugixml/*.cpp"
+    # "${libcarla_source_thirdparty_path}/pugixml/*.hpp"
+    # "${libcarla_source_thirdparty_path}/pugixml/*.h")
+# set(libcarla_sources "${libcarla_sources};${libcarla_pugixml_sources}")
+# install(FILES ${libcarla_pugixml_sources} DESTINATION include/pugixml)
 
 # ==============================================================================
 # Create targets for debug and release in the same build type.
